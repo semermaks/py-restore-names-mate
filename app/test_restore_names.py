@@ -25,8 +25,7 @@ from app.restore_names import restore_names
     ]
 )
 def test_restore_names_with_missing_first_name(
-        users: list[dict],
-        expected_result: list[dict]
+        users: list[dict], expected_result: list[dict]
 ) -> None:
     restore_names(users)
     assert users == expected_result
